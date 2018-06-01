@@ -22,6 +22,9 @@ Route::get('test','HomeController@test');
 Route::get('test1','HomeController@test1');
 // Dành cho học sinh đăng nhập vào hệ thống và giao diện của học sinh
 Route::get('trangchu','PagesController@getTrangchu');
+Route::get('khoahoc/nguoikhuyettat', function() {
+	return view('nguoikhuyettat');
+});
 Route::get('monhoc/{id}','PagesController@monhoc');
 Route::get('danhsachbaihoc/{id}','PagesController@danhsachbaihoc');
 Route::get('baihoc/{id}/{monhoc_id}','PagesController@baihoc');
